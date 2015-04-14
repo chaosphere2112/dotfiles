@@ -21,7 +21,7 @@ case "$h" in
   *rhea-lo*)
      CDATBUILDS="/lustre/atlas/world-shared/csc121/uvcdat";;
   *)
-     CDATBUILDS="/usr/local/uvcdat";;
+     CDATBUILDS="$HOME/bin/uvcdat";;
 esac
 case `uname` in
   Darwin*)
@@ -30,12 +30,10 @@ case `uname` in
     #xmodmap -e "keycode 66 = Shift_L";;
 esac
 
-fonts=( doom banner big bulbhead digital epic larry3d ogre puffy pyramid small smkeyboard  )
+fonts=( smkeyboard  )
 
 ## Accessing remote machines
 alias xt=xtightvncviewer
-alias xtm="xtightvncviewer meryem"
-alias xts="xtightvncviewer sofia"
 
 ## Git 
 alias gcl='${HOME}/bin/git-clean-local.pyi -s -V'
